@@ -1,37 +1,115 @@
-## Welcome to GitHub Pages
+# FrontendFullStack
 
-You can use the [editor on GitHub](https://github.com/bitsandpixel/FrontendFullStack/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Table of contents
+* [General info](#general-info)
+* [Development Environment](#development-environment)
+* [Setup](#setup)
+    * [Useful Commands](#useful-commands)
+        * [Installation](#installation)
+        * [Version](#version)
+        * [Functionality](#functionality)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## General info
+*   A frontend full stack project course oon Course era.
+*   URL: https://www.coursera.org/learn/html-css-javascript-for-web-developers
+	
+## Development Environment
+Project is created with:
+* [Visual Studio Code](#visual-studio-code) 
+* [Node.js](#Node.js)
+* [npm](#npm)
+* [Browsersync](#browsersync)
 
-### Markdown
+## Setup
+Install the tools in the exact order to avoid the problems further down the line.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Visual Studio Code
+*   How to install:
+    * Follow the instructions in the given URL.
+*   Installed Version: 1.60.1 
+*   URL: https://code.visualstudio.com/download
+*   Extensions:
+    * Babel ES6/ES7
+    * Path Intellisense
+    * Auto Close Tag
+    * Auto Complete Tag
+    * Auto Rename Tag
+*   Usage: Code Editor
+*   Installation Dependency:
+    * None
 
-```markdown
-Syntax highlighted code block
+### Node.js
+*   How to install:
+    * Follow the instructions in the given URL.
+*   Installed Version: 16.9.1
+*   URL: https://nodejs.org/en/
+*   Usage: 
+    * to create a production web server
+*   Installation Dependency:
+    * None
 
-# Header 1
-## Header 2
-### Header 3
+### npm
+*   How to install:
+    * Node Package Manager will be installed along with [Node.js](#Node.js)
+*   Installed Version: 7.24.0
+*   URL: https://nodejs.org/en/
+*   Usage: 
+    * to install [Browsersync](#browsersync)
+*   Installation Dependency: 
+    * None
 
-- Bulleted
-- List
+### Browsersync
+*   How to install:
+    * go to  [Installation](#installation) section for the command or 
+    * Follow the instructions in the given URL. 
+*   Installed Version: 2.27.5
+*   URL: https://browsersync.io/
+*   Usage: 
+    * Time-saving synchronised browser testing is possible which eliminates the manual repetative tasks like live reloading.
+    * Simple development http server with live reload capability.
+    * Tests the action across devices and browsers over internet while developing on local machine.
+*   Installation Dependency:
+    * [Node.js](#Node.js)
+    * [npm](#npm)
+    * Restart Windows for yarn to completely configure itself.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### Useful Commands
 
-[Link](url) and ![Image](src)
+* #### Installation
+```
+    To install npm globally
+        npm install -g npm@7.24.0
+
+    To install Browsersync globally
+        npm install -g browser-sync
+```
+* #### Functionality
+```
+    To activate live-server on public folder inside indecision-app folder
+        live-server public
+
+    To view the commands you can run with babel
+        babel --help
+    
+    To access the list of commands of yarn
+        yarn help
+    
+    To get the information of specific command of yarn
+        yarn help COMMAND
+    
+    To start a new project and to interactively create or update a package.json file
+        yarn init
+
+    To compile an input file to an output file using babel 
+        babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+```
+* #### Version
+```
+        node -v 
+        npm -v
+        browser-sync --version
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bitsandpixel/FrontendFullStack/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
