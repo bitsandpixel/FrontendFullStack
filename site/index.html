@@ -1,15 +1,191 @@
-<!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
+    <meta name="Author" content="Vishnu Kiran Kandanelly">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Coursera</title>
 </head>
 
 <body>
-    <h1>Hello Coursera! It is a great course!</h1>
+    <header id="top">
+        <h1 style="text-align: center;color:darkslategray;">Frontend Full Stack</h1>
+    </header>
+    <div>
+        <ul>
+            <li>
+                <h2 style="color:red">Links to the section of the Page:</h2>
+                <ul>
+                    <li>Section 0: <a href="#section0">To-DO List</a></li>
+                    <li>Section 1: <a href="#section1">Span and Margin</a></li>
+                    <li>Section 2: <a href="#section2">Section and article</a></li>
+                    <li>Section 3: <a href="#section3">unordered list</a></li>
+                    <li>Section 4: <a href="#section4">Ordered list</a></li>
+                    <li>Section 5: <a href="#section5">HTML Entity References</a></li>
+                    <li>Section 6: <a href="#section6">Working with links</a></li>
+                    <li>Section 7: <a href="#section7">Displaying Images</a>1</li>
+                    <li>Section 8: <a href="#section8"></a></li>
+                    <li>Bottom: <a href="#bottom" style="margin-left:11px">Go to the end of the page</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    <hr>
+    <section id="section0">
+        <ul>
+            <li style="color:darkmagenta">
+                <h2 style="color:red">TO-DO List</h2>
+                <ul style="width:500px">
+                    <li>CSS Pseudo classes</li>
+                    <li>how to use &lt;nav&gt; tag</li>
+                    <li>What does &quot;position:fixed; attribute does&quot;</li>
+                    <li>Is alt attribute necessary for all the times when using a img tag as it makes the screen jump
+                        when the browser failed to load the image?</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <h2>Hello Coursera! It is a great course!</h2>
+    <p>This is a helpful course to <span style="color:blue;font-weight:bold;margin-left: 3px;"> learn HTML</span></p>
+    <h1><a style="color:green;font-weight:bold;font-style:italic;"
+            href="https://github.com/bitsandpixel/FrontendFullStack/">find the project here</a></h1>
+    <hr>
+    <section>Section 1
+        <article>article 1
+            <h2>article 1 has heading</h2>
+        </article>
+        <article>article 2</article>
+        <article>article 3</article>
+    </section>
+    <section>Section 2
+        <article>article 4</article>
+        <article>article 5</article>
+        <article>article 6</article>
+        <div>this is a division</div>
+    </section>
+    <hr>
+    <aside>tutor of the course is ychaikin from courseera</aside>
+    <hr>
+    <h2>unordered list</h2>
+    <div id="unorderedlist">shopppig list
+        <ul>
+            <li>banana</li>
+            <li>corn</li>
+            <li>beans</li>
+            <li>milk
+                <ul>
+                    <li>oatmilk</li>
+                    <li>cow milk</li>
+                    <li>coconut milk</li>
+                </ul>
+            </li>
+            <li>capsicum</li>
+        </ul>
+    </div>
+    <div id="orderedlist">order food</div>
+    <hr>
+    <ol>
+        <li>open app</li>
+        <li>select the restaurant</li>
+        <li>select the food item</li>
+        <li>give order instructions with address</li>
+        <li>payment options
+            <ol>
+                <li>credit card</li>
+                <li>debit card</li>
+                <li>paypal</li>
+            </ol>
+        </li>
+        <li>enjoy the food</li>
+    </ol>
+    <hr>
+    <h6 style="color: crimson;font-size:20px">HTML Entity References</h6>
+    <ul>
+        <li>Help avoiding rendering issues</li>
+        <li>Safeguard against more limited character setting</li>
+        <li>Provide characters not availble on a keyboard</li>
+    </ul>
+    <h2>never be afraid to be &lt;than a 100% &amp; always give &gt; than 100% effort</h2>
+    <p>Failure is not the guy who is failed. Failure is a guy who is so afraid of the defeat, He never even tried. You
+        are a loser if you neither know voctory&nbsp;nor&nbsp;defeat</p>
+    <hr>
+    <!-- after div tag, line breaks -->
+    <div class="center" style="text-align: left;">Center</div>
+    <span style="margin-left: 10px;margin-left:10px;">Margin right</span>
+    <span>margin-left</span>
+    <hr>
+    <!-- to support all versions of character encoding and 
+        avoid misinterpretation of the characters,
+         we can use entity references FOR EXAMPLE-->
+    <p>"Commit to improve yourself"
+        <!--we can replace
+        quotes with &quot--> &quot;the best gift you can give to someone is a better version of yourself&quot;
+    </p>
+    <hr>
+    <div>
+        <h2 style="color:crimson">Creatinglinks</h2>
+        <ul>
+            <!-- Creating links -->
+
+            <li>We can link to a file in the same folder like this(this is an inline tag):
+                <a href="first.html" title="first page">Link to a file
+                    in the same folder</a>
+            </li>
+            <!-- We can have a block element(phrasing content) inside an inline element(Flow content) like "a" tag because "a" is both of them -->
+            <li>This(div) is a block tag which would force it to go to next line: <a href="first.html"
+                    title="first page">
+                    <div>DIV tag link to a file in in the same directory</div>
+                </a></li>
+        </ul>
+        <!-- Creating External links -->
+        <hr>
+        <h2 style="color:crimson">Creating External Links</h2>
+        <p>Creating an externation link for github page of this course
+            <a href="https://github.com/bitsandpixel/FrontendFullStack" target="_blank" title="FrontEndFullStack">click
+                here to go to the github of this course</a>
+        </p>
+        <!-- Internal linking to other pages in the site
+        External linking to other websites
+    Linking to sections of a document using fragment identifiers -->
+    </div>
+    <hr>
+    <div id="images">
+        <h2 style="color:crimson">Displaying Images</h2>
+        <figure title="Boy on a bench">
+            <figcaption>A boy on a bench</figcaption>
+            <!-- you can title attribute to anchor tag, image, figure,div,abbr,p, etc tags-->
+            <p><img src="https://images.pexels.com/photos/1280162/pexels-photo-1280162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    width="500" height="350"></p>
+        </figure><!-- alt attribute negating width and height atributes.-->
+        <figure>
+            <figcaption>mountain in the mist</figcaption>
+            <p></p><img title="Mountain in the mist" src="Photo.jpg" height="350" width="500"
+                alt="A photo of a mountain">
+            some random text I am writing for testing purpose</p>
+            <p>
+            <ul>
+                <li>Images can enhance your site</li>
+                <li>Remember to specify height and width attributes whenever possible</li>
+            </ul>
+            </p>
+            <span>sths<div>lavn</div></span>
+    </div>
+    </figure>
+    <!--img is an inline tag and you can also give external link of a photo-->
+    </div>
+    <hr>
+    <div id="bottom">
+        <b>
+            <footer style="text-align: center;color:red;font-size: 30px;">Foot note</footer>
+        </b>
+    </div>
+    <a href="#top" style="bottom:10px;right:0px;background-color:#cf8">Back to Top</a>
+    <!--position:fixed; to make to bottom right corner -->
+    </div>
 </body>
 
 </html>
